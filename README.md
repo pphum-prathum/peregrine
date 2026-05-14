@@ -6,7 +6,7 @@ session booking, and account management.
 ## Team
 - Chanisara Jonsomjid
 - Thareerat Phothithum
-- Phanphum Prathumsuwan — database design & backend integration
+- Phanphum Prathumsuwan
 - Pran Tantipiwatanaskul
 - Paranee Wannasorn
 

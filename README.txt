@@ -1,18 +1,57 @@
-To start the server for the website Peregrine, there are a few steps that must be taken:
+# Peregrine — Online Tutor Platform
 
-Step 1: Create two new terminals.
-In one terminal, change the directory into the front-end folder by typing “cd sec3_gr8_fe_src”.
-Similarly, change the directory of the other terminal to the back-end folder by typing “cd sec3_gr8_ws_src”.
+A web platform connecting tutors and students through profile discovery, 
+session booking, and account management.
 
-Step 2: Running the code will require some additional modules; therefore, installing dependencies is necessary. 
-In the terminal for “sec3_gr8_fe_src”, run the command: npm install express, nodemon, dotenv.
-In the terminal for “sec3_gr8_ws_src”, run the command: npm install express, nodemon, dotenv, mysql2, cors.
+## Team
+- Chanisara Jonsomjid
+- Thareerat Phothithum
+- Phanphum Prathumsuwan — database design & backend integration
+- Pran Tantipiwatanaskul
+- Paranee Wannasorn
 
-Step 3: Setup a database user by creating a .env file in the folder “sec3_gr8_ws_src”.
-The user set in the file will also need to be granted privileges in the “Users and Privileges” tab in MySQL.
+## Tech Stack
+- **Frontend:** HTML, CSS, JavaScript (Express static server)
+- **Backend:** Node.js, Express
+- **Database:** MySQL
 
-Step 4: Run the command "npm start" in the both terminal, then open the browser and navigate to "localhost:3030" to access the website.
+## Getting Started
 
----------------------
+### Prerequisites
+- Node.js
+- MySQL (with MySQL Workbench or equivalent)
 
-*There is an ERROR in the admin_edit.html file*
+### 1. Install dependencies
+
+In the frontend directory:
+```bash
+cd sec3_gr8_fe_src
+npm install express nodemon dotenv
+```
+
+In the backend directory:
+```bash
+cd sec3_gr8_ws_src
+npm install express nodemon dotenv mysql2 cors
+```
+
+### 2. Configure the database
+
+Create a `.env` file inside `sec3_gr8_ws_src`:
+```env
+DB_HOST=localhost
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+DB_NAME=peregrine
+```
+
+Grant the user privileges in MySQL under **Users and Privileges**.
+
+### 3. Run the project
+
+Open two terminals and run in each:
+```bash
+npm start
+```
+
+Then open your browser and go to `http://localhost:3030`
